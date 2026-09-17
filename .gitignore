@@ -1,7 +1,8 @@
 .DS_Store
-# config.toml is tracked so Russian defaults and key placeholders stay in the repo.
-# Do not put production secrets in a public repo — prefer private repo or env vars.
+/config.toml
 /config.toml.bak
+.env
+# Do not put production secrets in a public repo - prefer private repo or env vars.
 /storage/
 /.idea/
 /app/services/__pycache__
