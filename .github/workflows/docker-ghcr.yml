@@ -21,7 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  IMAGE_NAME: ghcr.io/harry0703/moneyprinterturbo
+  # Publish under this repo's owner so GITHUB_TOKEN can push to GHCR on forks.
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/moneyprinterturbo
 
 jobs:
   publish:
